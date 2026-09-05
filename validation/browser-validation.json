@@ -1,0 +1,28 @@
+{
+  "environment": "Desktop Edge/Chromium, mobile viewport, canvas-generated camera stream (getUserMedia stub); NOT iPhone Safari",
+  "startedAt": "2026-09-05T13:19:50.887Z",
+  "checks": {
+    "modelLoaded": true,
+    "photo416": true,
+    "overlayAlignedPortrait": true,
+    "photo640": true,
+    "landscapeNoOverflow": true,
+    "saveDownload": true,
+    "cameraContinuous": true,
+    "stopReleasesTracks": true,
+    "pagehideStopsCamera": true,
+    "offlineReloadAndInference": true,
+    "webgpuOrWasmFallback": true,
+    "noImageUploads": true,
+    "noExternalInferenceRequests": true
+  },
+  "photo416": "01\n检出目标\n471 ms\n单次识别耗时\n2.1 次/秒\n处理速率估计",
+  "photo640": "13\n检出目标\n739 ms\n单次识别耗时\n1.4 次/秒\n处理速率估计",
+  "cameraSoakSeconds": 31.013,
+  "cameraMetrics": "00\n检出目标\n85 ms\n单次识别耗时\n11.8 次/秒\n处理速率估计",
+  "backendStatus": "照片识别完成",
+  "errors": [],
+  "requestFailures": [],
+  "passed": true,
+  "finishedAt": "2026-09-05T13:20:34.174Z"
+}

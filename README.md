@@ -100,4 +100,3 @@ npm.cmd test
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/tutorials/web/)：1.22.0，MIT。
 
 原模型卡未明确列出独立的权重许可证；本交付为个人实验验证，若后续公开商业分发需先核对权重授权。项目中的个人道路照片仅用于本机验证，没有放入网站资源。
-

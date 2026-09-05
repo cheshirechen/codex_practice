@@ -1,0 +1,1459 @@
+{
+  "provenance": {
+    "model_revision": "257276b8c4ce530f48dff415e36761f9d1af4e69",
+    "source_revision": "915bbf294bb74c859f0b41f1c23bc395014ea679",
+    "model_repository": "keremberke/yolov5n-garbage",
+    "weight_sha256": "24623ac6d903e4554e548b97f963e277dfa32d102cecad6f3d518259c641deea",
+    "checkpoint_globals": [
+      "__builtin__ set",
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch HalfStorage",
+      "torch LongStorage",
+      "torch._utils _rebuild_parameter",
+      "torch._utils _rebuild_tensor_v2",
+      "torch.nn.modules.activation SiLU",
+      "torch.nn.modules.batchnorm BatchNorm2d",
+      "torch.nn.modules.container ModuleList",
+      "torch.nn.modules.container Sequential",
+      "torch.nn.modules.conv Conv2d",
+      "torch.nn.modules.pooling MaxPool2d",
+      "torch.nn.modules.upsampling Upsample",
+      "yolov5.models.common Bottleneck",
+      "yolov5.models.common C3",
+      "yolov5.models.common Concat",
+      "yolov5.models.common Conv",
+      "yolov5.models.common SPPF",
+      "yolov5.models.yolo Detect",
+      "yolov5.models.yolo DetectionModel"
+    ]
+  },
+  "names": [
+    "biodegradable",
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic"
+  ],
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.5.1+cpu",
+    "onnx": "1.17.0",
+    "onnxruntime": "1.20.1"
+  },
+  "checks": [
+    {
+      "size": 416,
+      "sample": "public-test-01",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.001251220703125,
+      "mean_absolute_error": 4.652653387893224e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 68.93460000082996,
+      "boxes": [
+        [
+          270.0857849121094,
+          26.196063995361328,
+          342.3756408691406,
+          137.4374237060547,
+          0.25646549463272095,
+          0.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-02",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.001190185546875,
+      "mean_absolute_error": 5.987190434098011e-06,
+      "post_nms_equivalent": true,
+      "detections": 4,
+      "onnx_cpu_ms": 52.825400000074296,
+      "boxes": [
+        [
+          28.205551147460938,
+          -2.3255615234375,
+          170.0467987060547,
+          408.9949035644531,
+          0.5168846845626831,
+          3.0
+        ],
+        [
+          278.69970703125,
+          178.85552978515625,
+          339.31396484375,
+          391.94580078125,
+          0.42219865322113037,
+          2.0
+        ],
+        [
+          248.78627014160156,
+          0.5325698852539062,
+          372.46148681640625,
+          180.89495849609375,
+          0.30665430426597595,
+          2.0
+        ],
+        [
+          35.62022399902344,
+          15.4844970703125,
+          165.78848266601562,
+          395.4395751953125,
+          0.27904102206230164,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-03",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.00140380859375,
+      "mean_absolute_error": 6.1135756368457805e-06,
+      "post_nms_equivalent": true,
+      "detections": 2,
+      "onnx_cpu_ms": 47.83919999954378,
+      "boxes": [
+        [
+          91.80979919433594,
+          40.924041748046875,
+          369.4110107421875,
+          348.0916442871094,
+          0.5377865433692932,
+          3.0
+        ],
+        [
+          -2.5913619995117188,
+          214.12721252441406,
+          80.20516967773438,
+          355.14410400390625,
+          0.4025430679321289,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-04",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0014801025390625,
+      "mean_absolute_error": 6.541609764099121e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 48.78449999978329,
+      "boxes": [
+        [
+          49.23072814941406,
+          0.548980712890625,
+          398.30413818359375,
+          413.12628173828125,
+          0.2608489394187927,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-05",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0007476806640625,
+      "mean_absolute_error": 5.642616088152863e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 44.852500000160944,
+      "boxes": []
+    },
+    {
+      "size": 416,
+      "sample": "public-test-06",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.000640869140625,
+      "mean_absolute_error": 5.665627668349771e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 49.48530000001483,
+      "boxes": [
+        [
+          11.092819213867188,
+          98.73954772949219,
+          335.85992431640625,
+          414.216552734375,
+          0.2733730375766754,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-07",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.00103759765625,
+      "mean_absolute_error": 4.795078439201461e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 35.57049999926676,
+      "boxes": []
+    },
+    {
+      "size": 416,
+      "sample": "public-test-08",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.001373291015625,
+      "mean_absolute_error": 7.947405720187817e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 54.553500000110944,
+      "boxes": [
+        [
+          105.24236297607422,
+          -6.4835205078125,
+          291.4969787597656,
+          401.1056213378906,
+          0.3484842777252197,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-09",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.004058837890625,
+      "mean_absolute_error": 1.2070752745785285e-05,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 58.11040000025969,
+      "boxes": [
+        [
+          80.06829071044922,
+          20.386703491210938,
+          260.51751708984375,
+          370.57037353515625,
+          0.4441395699977875,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "public-test-10",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0009765625,
+      "mean_absolute_error": 4.3696118154912256e-06,
+      "post_nms_equivalent": true,
+      "detections": 6,
+      "onnx_cpu_ms": 47.64249999971071,
+      "boxes": [
+        [
+          236.96737670898438,
+          274.7981262207031,
+          399.8274841308594,
+          343.3064880371094,
+          0.45146486163139343,
+          5.0
+        ],
+        [
+          181.86175537109375,
+          296.6864929199219,
+          335.91796875,
+          385.8226623535156,
+          0.42090678215026855,
+          5.0
+        ],
+        [
+          42.86773681640625,
+          123.65304565429688,
+          176.91754150390625,
+          352.4327087402344,
+          0.3656916320323944,
+          2.0
+        ],
+        [
+          168.8307647705078,
+          25.839492797851562,
+          290.45654296875,
+          308.40673828125,
+          0.2924945056438446,
+          2.0
+        ],
+        [
+          168.66607666015625,
+          30.502944946289062,
+          287.25360107421875,
+          301.080322265625,
+          0.2917543351650238,
+          5.0
+        ],
+        [
+          37.73152160644531,
+          123.72272491455078,
+          181.41607666015625,
+          344.7744140625,
+          0.2541773021221161,
+          5.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "author-montage",
+      "note": "Author supplied annotated montage; pipeline smoke test only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.001617431640625,
+      "mean_absolute_error": 4.215052285871934e-06,
+      "post_nms_equivalent": true,
+      "detections": 9,
+      "onnx_cpu_ms": 54.93639999986044,
+      "boxes": [
+        [
+          313.8678283691406,
+          107.88593292236328,
+          416.1512145996094,
+          203.2259521484375,
+          0.4794522225856781,
+          4.0
+        ],
+        [
+          0.519927978515625,
+          2.227447509765625,
+          252.2687530517578,
+          97.67835998535156,
+          0.44843271374702454,
+          4.0
+        ],
+        [
+          303.64447021484375,
+          22.895553588867188,
+          416.65240478515625,
+          100.98457336425781,
+          0.44165635108947754,
+          4.0
+        ],
+        [
+          101.07354736328125,
+          212.38047790527344,
+          207.2274169921875,
+          305.62677001953125,
+          0.3467227518558502,
+          4.0
+        ],
+        [
+          15.770076751708984,
+          216.0287322998047,
+          71.45899963378906,
+          311.7196350097656,
+          0.33762797713279724,
+          3.0
+        ],
+        [
+          116.34251403808594,
+          110.3234634399414,
+          230.57691955566406,
+          197.72232055664062,
+          0.3364894688129425,
+          4.0
+        ],
+        [
+          126.82453918457031,
+          311.7540283203125,
+          374.17156982421875,
+          410.4622802734375,
+          0.2900848984718323,
+          4.0
+        ],
+        [
+          27.195568084716797,
+          319.1450500488281,
+          79.67124938964844,
+          411.8115539550781,
+          0.28646475076675415,
+          3.0
+        ],
+        [
+          0.591644287109375,
+          101.82122802734375,
+          113.86408233642578,
+          200.39227294921875,
+          0.2594257891178131,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "blank-negative",
+      "note": "Synthetic uniform image; not a real-world negative sample",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.000823974609375,
+      "mean_absolute_error": 6.376417331921402e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 54.2754000007335,
+      "boxes": []
+    },
+    {
+      "size": 416,
+      "sample": "img1013_jpg.rf.7e6f1f22e3208828b2f624c19cfb6eb4",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0010528564453125,
+      "mean_absolute_error": 4.89150988869369e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 48.95669999950769,
+      "boxes": [
+        [
+          -12.034942626953125,
+          -2.27044677734375,
+          420.641845703125,
+          412.0319519042969,
+          0.5834266543388367,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "img1020_jpg.rf.f146bb9968434ddcf18720a56595c852",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0009002685546875,
+      "mean_absolute_error": 4.098356384929502e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 44.54429999987042,
+      "boxes": [
+        [
+          -2.616485595703125,
+          207.27149963378906,
+          417.5254211425781,
+          386.0589599609375,
+          0.30698785185813904,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "img1021_jpg.rf.4b036c828c40d8426623fb5924b35281",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0006103515625,
+      "mean_absolute_error": 4.472197815630352e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 49.08710000017891,
+      "boxes": [
+        [
+          24.744003295898438,
+          131.09539794921875,
+          402.687744140625,
+          222.63070678710938,
+          0.3103744387626648,
+          5.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "img1024_jpg.rf.eac79bbe975aeb94edc305a5e4e58726",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.00061798095703125,
+      "mean_absolute_error": 4.3811796786030754e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 52.60379999981524,
+      "boxes": []
+    },
+    {
+      "size": 416,
+      "sample": "img1027_jpg.rf.27edb38d34715f37944bca0ee141c643",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.0010986328125,
+      "mean_absolute_error": 4.269117653166177e-06,
+      "post_nms_equivalent": true,
+      "detections": 4,
+      "onnx_cpu_ms": 51.24549999982264,
+      "boxes": [
+        [
+          -23.174407958984375,
+          17.847702026367188,
+          433.677978515625,
+          407.76361083984375,
+          0.4674834609031677,
+          4.0
+        ],
+        [
+          317.6661071777344,
+          122.36273956298828,
+          420.3973083496094,
+          197.33990478515625,
+          0.3079703450202942,
+          4.0
+        ],
+        [
+          285.41552734375,
+          0.3718605041503906,
+          423.21484375,
+          84.87602233886719,
+          0.27692630887031555,
+          4.0
+        ],
+        [
+          209.9197998046875,
+          223.2861328125,
+          410.5821533203125,
+          395.851806640625,
+          0.2678108513355255,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 416,
+      "sample": "img1033_jpg.rf.b1a91c861ced7c8860f894cec18825f7",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        10647,
+        11
+      ],
+      "max_absolute_error": 0.00030517578125,
+      "mean_absolute_error": 3.293045210739365e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 46.89719999987574,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "public-test-01",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0013427734375,
+      "mean_absolute_error": 5.302220870362362e-06,
+      "post_nms_equivalent": true,
+      "detections": 12,
+      "onnx_cpu_ms": 115.18169999999373,
+      "boxes": [
+        [
+          440.7351989746094,
+          44.249752044677734,
+          511.2878112792969,
+          139.06631469726562,
+          0.49100959300994873,
+          0.0
+        ],
+        [
+          409.6835021972656,
+          156.10552978515625,
+          460.7494812011719,
+          225.33538818359375,
+          0.39235445857048035,
+          0.0
+        ],
+        [
+          246.9397735595703,
+          156.71139526367188,
+          285.27618408203125,
+          187.35369873046875,
+          0.37796059250831604,
+          0.0
+        ],
+        [
+          285.1750183105469,
+          154.755615234375,
+          315.2345275878906,
+          188.44317626953125,
+          0.3583957254886627,
+          0.0
+        ],
+        [
+          352.96954345703125,
+          107.10382843017578,
+          392.939453125,
+          164.5286865234375,
+          0.3284653127193451,
+          0.0
+        ],
+        [
+          393.6761169433594,
+          61.27494430541992,
+          451.4905700683594,
+          161.98280334472656,
+          0.321971595287323,
+          0.0
+        ],
+        [
+          262.6961669921875,
+          99.99252319335938,
+          302.20416259765625,
+          163.3050537109375,
+          0.29435238242149353,
+          0.0
+        ],
+        [
+          187.98777770996094,
+          135.3260040283203,
+          221.4804229736328,
+          207.65516662597656,
+          0.275925874710083,
+          0.0
+        ],
+        [
+          359.6021728515625,
+          39.34222412109375,
+          387.10491943359375,
+          127.94723510742188,
+          0.2668929994106293,
+          0.0
+        ],
+        [
+          289.81103515625,
+          186.0176544189453,
+          317.3218994140625,
+          211.6007843017578,
+          0.26546424627304077,
+          0.0
+        ],
+        [
+          302.0574951171875,
+          121.32945251464844,
+          339.48687744140625,
+          156.2863311767578,
+          0.2634216248989105,
+          0.0
+        ],
+        [
+          371.18634033203125,
+          151.05384826660156,
+          414.28643798828125,
+          191.04966735839844,
+          0.2565535604953766,
+          0.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "public-test-02",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0042724609375,
+      "mean_absolute_error": 7.796053978381678e-06,
+      "post_nms_equivalent": true,
+      "detections": 2,
+      "onnx_cpu_ms": 111.9157000002815,
+      "boxes": [
+        [
+          50.665130615234375,
+          33.6949462890625,
+          253.00201416015625,
+          640.9121704101562,
+          0.3036605715751648,
+          3.0
+        ],
+        [
+          425.97210693359375,
+          243.12501525878906,
+          516.7011108398438,
+          619.7767333984375,
+          0.2599969804286957,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "public-test-03",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.00140380859375,
+      "mean_absolute_error": 7.373791049758438e-06,
+      "post_nms_equivalent": true,
+      "detections": 3,
+      "onnx_cpu_ms": 119.37130000023899,
+      "boxes": [
+        [
+          142.6867218017578,
+          75.23789978027344,
+          407.80145263671875,
+          535.262451171875,
+          0.3620464503765106,
+          2.0
+        ],
+        [
+          -1.0807037353515625,
+          332.8370361328125,
+          125.8293228149414,
+          540.0889892578125,
+          0.33171340823173523,
+          2.0
+        ],
+        [
+          -1.081634521484375,
+          332.451904296875,
+          129.0189666748047,
+          540.2271728515625,
+          0.2514825761318207,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "public-test-04",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.001129150390625,
+      "mean_absolute_error": 6.428323558793636e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 108.33129999991797,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "public-test-05",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.001373291015625,
+      "mean_absolute_error": 6.723844762746012e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 113.85380000047007,
+      "boxes": [
+        [
+          196.08447265625,
+          44.232879638671875,
+          462.3486328125,
+          620.815673828125,
+          0.3762606680393219,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "public-test-06",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0009002685546875,
+      "mean_absolute_error": 5.892950412089704e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 103.29989999991085,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "public-test-07",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0011138916015625,
+      "mean_absolute_error": 5.354730546969222e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 110.49950000051467,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "public-test-08",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0030517578125,
+      "mean_absolute_error": 9.318384400103241e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 107.65910000009171,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "public-test-09",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.003204345703125,
+      "mean_absolute_error": 1.3079972632112913e-05,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 128.78729999920324,
+      "boxes": [
+        [
+          137.39877319335938,
+          35.982513427734375,
+          412.7905578613281,
+          582.8447265625,
+          0.3141815960407257,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "public-test-10",
+      "note": "Public labeled test subset; fixed filename selection, not a complete evaluation",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.00103759765625,
+      "mean_absolute_error": 5.491655429068487e-06,
+      "post_nms_equivalent": true,
+      "detections": 2,
+      "onnx_cpu_ms": 123.46359999992274,
+      "boxes": [
+        [
+          390.18365478515625,
+          419.84271240234375,
+          611.282958984375,
+          530.5408935546875,
+          0.2826510965824127,
+          5.0
+        ],
+        [
+          65.44335174560547,
+          188.06199645996094,
+          276.82562255859375,
+          537.9503784179688,
+          0.2811548113822937,
+          2.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "author-montage",
+      "note": "Author supplied annotated montage; pipeline smoke test only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.001190185546875,
+      "mean_absolute_error": 4.004687070846558e-06,
+      "post_nms_equivalent": true,
+      "detections": 14,
+      "onnx_cpu_ms": 130.86310000016965,
+      "boxes": [
+        [
+          43.11022186279297,
+          496.23809814453125,
+          114.27799224853516,
+          633.1524047851562,
+          0.770075798034668,
+          2.0
+        ],
+        [
+          406.970703125,
+          40.015769958496094,
+          472.98406982421875,
+          153.34555053710938,
+          0.47077733278274536,
+          3.0
+        ],
+        [
+          36.23868942260742,
+          342.08038330078125,
+          108.03498840332031,
+          472.79693603515625,
+          0.4484359920024872,
+          2.0
+        ],
+        [
+          321.4320068359375,
+          42.36758041381836,
+          388.25799560546875,
+          154.41055297851562,
+          0.44575637578964233,
+          3.0
+        ],
+        [
+          11.225944519042969,
+          146.16552734375,
+          164.19744873046875,
+          296.76885986328125,
+          0.44496816396713257,
+          4.0
+        ],
+        [
+          483.6441345214844,
+          177.95089721679688,
+          630.5289306640625,
+          316.7954406738281,
+          0.42906588315963745,
+          4.0
+        ],
+        [
+          366.1064453125,
+          338.97357177734375,
+          428.38433837890625,
+          474.85797119140625,
+          0.4248082935810089,
+          2.0
+        ],
+        [
+          212.80043029785156,
+          166.48477172851562,
+          314.47808837890625,
+          304.3185119628906,
+          0.3592512309551239,
+          3.0
+        ],
+        [
+          474.06396484375,
+          43.90830993652344,
+          640.197509765625,
+          137.22898864746094,
+          0.3446248471736908,
+          3.0
+        ],
+        [
+          32.080360412597656,
+          341.4349365234375,
+          107.41393280029297,
+          472.092041015625,
+          0.33519405126571655,
+          3.0
+        ],
+        [
+          500.61285400390625,
+          490.9019470214844,
+          565.6002807617188,
+          628.3155517578125,
+          0.32924821972846985,
+          2.0
+        ],
+        [
+          412.83917236328125,
+          40.91305923461914,
+          472.33441162109375,
+          154.8695068359375,
+          0.2875639796257019,
+          2.0
+        ],
+        [
+          164.5902099609375,
+          473.3453369140625,
+          319.1202697753906,
+          626.6697998046875,
+          0.27602487802505493,
+          4.0
+        ],
+        [
+          367.3132019042969,
+          342.8256530761719,
+          427.8739318847656,
+          472.8961486816406,
+          0.25193479657173157,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "blank-negative",
+      "note": "Synthetic uniform image; not a real-world negative sample",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.00077056884765625,
+      "mean_absolute_error": 6.614947778871283e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 113.39520000001357,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "img1013_jpg.rf.7e6f1f22e3208828b2f624c19cfb6eb4",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.002166748046875,
+      "mean_absolute_error": 5.361511739465641e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 131.21289999980945,
+      "boxes": [
+        [
+          87.79876708984375,
+          -43.98699951171875,
+          640.4707641601562,
+          595.7249755859375,
+          0.33853909373283386,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "img1020_jpg.rf.f146bb9968434ddcf18720a56595c852",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.00140380859375,
+      "mean_absolute_error": 4.301902663428336e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 117.68129999927623,
+      "boxes": [
+        [
+          8.632568359375,
+          36.31776428222656,
+          301.2314453125,
+          134.3427276611328,
+          0.26691314578056335,
+          3.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "img1021_jpg.rf.4b036c828c40d8426623fb5924b35281",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0008697509765625,
+      "mean_absolute_error": 4.65157381768222e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 127.8572000001077,
+      "boxes": [
+        [
+          344.7409362792969,
+          240.13333129882812,
+          633.352294921875,
+          345.4012145996094,
+          0.29692792892456055,
+          5.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "img1024_jpg.rf.eac79bbe975aeb94edc305a5e4e58726",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0006866455078125,
+      "mean_absolute_error": 4.306109076424036e-06,
+      "post_nms_equivalent": true,
+      "detections": 0,
+      "onnx_cpu_ms": 122.08339999961026,
+      "boxes": []
+    },
+    {
+      "size": 640,
+      "sample": "img1027_jpg.rf.27edb38d34715f37944bca0ee141c643",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.0015716552734375,
+      "mean_absolute_error": 4.264376002538484e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 127.74899999931222,
+      "boxes": [
+        [
+          481.2623291015625,
+          -0.3996391296386719,
+          641.892333984375,
+          124.4964599609375,
+          0.29473090171813965,
+          4.0
+        ]
+      ]
+    },
+    {
+      "size": 640,
+      "sample": "img1033_jpg.rf.b1a91c861ced7c8860f894cec18825f7",
+      "note": "Local road photo, no compatible six-class ground truth; qualitative only",
+      "output_shape": [
+        1,
+        25200,
+        11
+      ],
+      "max_absolute_error": 0.000518798828125,
+      "mean_absolute_error": 3.75608556169027e-06,
+      "post_nms_equivalent": true,
+      "detections": 1,
+      "onnx_cpu_ms": 126.95950000033918,
+      "boxes": [
+        [
+          274.2724609375,
+          553.9168701171875,
+          357.5164794921875,
+          640.942138671875,
+          0.2518557012081146,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "iphone_tested": false,
+  "public_test_subset": {
+    "images": 10,
+    "selection": "first two filenames containing each class, deduplicated",
+    "ground_truth": {
+      "public-test-01": [
+        {
+          "label": 3,
+          "bbox": [
+            210,
+            105,
+            135.5,
+            252
+          ]
+        },
+        {
+          "label": 3,
+          "bbox": [
+            88,
+            110,
+            130.5,
+            250
+          ]
+        },
+        {
+          "label": 0,
+          "bbox": [
+            226,
+            23,
+            127,
+            117.5
+          ]
+        },
+        {
+          "label": 0,
+          "bbox": [
+            85,
+            51,
+            135.5,
+            82
+          ]
+        }
+      ],
+      "public-test-02": [
+        {
+          "label": 3,
+          "bbox": [
+            279,
+            273,
+            52,
+            126.5
+          ]
+        },
+        {
+          "label": 3,
+          "bbox": [
+            25,
+            87,
+            144.5,
+            326.5
+          ]
+        },
+        {
+          "label": 0,
+          "bbox": [
+            243,
+            5,
+            143,
+            165.5
+          ]
+        }
+      ],
+      "public-test-03": [
+        {
+          "label": 3,
+          "bbox": [
+            88,
+            46,
+            283.5,
+            303.5
+          ]
+        },
+        {
+          "label": 1,
+          "bbox": [
+            0,
+            215,
+            83,
+            142
+          ]
+        }
+      ],
+      "public-test-04": [
+        {
+          "label": 1,
+          "bbox": [
+            32,
+            0,
+            227.5,
+            60.5
+          ]
+        },
+        {
+          "label": 1,
+          "bbox": [
+            55,
+            1,
+            343,
+            414
+          ]
+        },
+        {
+          "label": 1,
+          "bbox": [
+            30,
+            0,
+            365.5,
+            415
+          ]
+        }
+      ],
+      "public-test-05": [
+        {
+          "label": 3,
+          "bbox": [
+            100,
+            16,
+            208,
+            389.5
+          ]
+        }
+      ],
+      "public-test-06": [
+        {
+          "label": 3,
+          "bbox": [
+            90,
+            109,
+            231,
+            305.5
+          ]
+        }
+      ],
+      "public-test-07": [
+        {
+          "label": 4,
+          "bbox": [
+            66,
+            49,
+            281,
+            323
+          ]
+        }
+      ],
+      "public-test-08": [
+        {
+          "label": 4,
+          "bbox": [
+            94,
+            15,
+            217.5,
+            383
+          ]
+        }
+      ],
+      "public-test-09": [
+        {
+          "label": 5,
+          "bbox": [
+            82,
+            0,
+            183,
+            368
+          ]
+        }
+      ],
+      "public-test-10": [
+        {
+          "label": 4,
+          "bbox": [
+            41,
+            123,
+            140,
+            231.5
+          ]
+        },
+        {
+          "label": 4,
+          "bbox": [
+            169,
+            26,
+            119.5,
+            225.5
+          ]
+        },
+        {
+          "label": 4,
+          "bbox": [
+            164,
+            28,
+            121.5,
+            289
+          ]
+        },
+        {
+          "label": 5,
+          "bbox": [
+            256,
+            274,
+            136,
+            71
+          ]
+        },
+        {
+          "label": 5,
+          "bbox": [
+            180,
+            286,
+            143.5,
+            99
+          ]
+        }
+      ]
+    },
+    "dataset_zip_sha256": "31e66c695f3e5a32891a18a60231dfcbf80087af9c7671ac68a260360584b0ab"
+  },
+  "summary": "Conversion parity checked on identical preprocessed inputs. No independent accuracy metric and no iPhone benchmark are claimed."
+}
