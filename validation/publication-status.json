@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-09-06",
+  "repository": "cheshirechen/codex_practice",
+  "lastVerifiedUploadedCommit": "20195d682badeeee89594193fe08674bbfb400b8",
+  "lastVerifiedWorkflowRun": 33971783711,
+  "lastVerifiedWorkflowConclusion": "success",
+  "expectedPagesUrl": "https://cheshirechen.github.io/codex_practice/",
+  "pagesPublicationVerified": true,
+  "currentRepositoryVisibility": "public",
+  "githubBuildAndTests": "success",
+  "resolvedDeploymentFailure": "Pages deployment API returned 404 before Pages was enabled; source is now GitHub Actions and deployment succeeded",
+  "publicVisibilityExplicitlyConfirmed": true,
+  "currentConnectionEvidence": [
+    "GitHub settings and workflow-log connector are now reachable",
+    "User completed identity verification and GitHub confirms repository is public",
+    "GitHub Pages settings show site live at https://cheshirechen.github.io/codex_practice/",
+    "Fresh unsigned-in Edge browser passed online photo416/photo640, simulated camera, stop/save, offline reload, and no-image-upload checks",
+    "Synthetic camera automatically changed detections from plastic to cardboard",
+    "QR code decoded and matched the actual Pages URL"
+  ],
+  "remaining": [
+    "Physical iPhone 15 camera, native sharing, accuracy, 10-minute stability, latency and heat require real-device measurement"
+  ],
+  "note": "Latest browser-validation.json and bottle-switch.json validate the actual Pages URL using desktop Edge and generated camera streams. They are not physical iPhone measurements. A plastic example also produces a false glass detection. phone-qr.png points to GitHub Pages."
+}

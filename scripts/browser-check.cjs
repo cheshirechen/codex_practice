@@ -18,7 +18,7 @@ const fs=require('node:fs');const path=require('node:path');const assert=require
  const page=await context.newPage();const errors=[],requests=[],failed=[];
  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push({method:r.method(),url:r.url()}));page.on('requestfailed',r=>failed.push({url:r.url(),error:r.failure()?.errorText}));
  const base=process.env.TEST_URL||'http://localhost:4173';
- const report={environment:`Desktop Edge/Chromium, mobile viewport, ${canvasCamera?'canvas-generated camera stream (getUserMedia stub)':'browser fake camera device'}; NOT iPhone Safari`,startedAt:new Date().toISOString(),checks:{}};
+ const report={targetUrl:base,environment:`Desktop Edge/Chromium, mobile viewport, ${canvasCamera?'canvas-generated camera stream (getUserMedia stub)':'browser fake camera device'}; NOT iPhone Safari`,startedAt:new Date().toISOString(),checks:{}};
  const ready=()=>page.getByRole('button',{name:'开启相机',exact:true}).waitFor({state:'visible'}).then(()=>page.waitForFunction(()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent==='开启相机');return b&&!b.disabled},{},{timeout:180000}));
  try{
  await page.goto(base);await ready();report.checks.modelLoaded=true;

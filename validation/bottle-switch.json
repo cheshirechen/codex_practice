@@ -1,31 +1,21 @@
 {
+  "targetUrl": "https://cheshirechen.github.io/codex_practice/",
+  "startedAt": "2026-09-06T03:32:52.821Z",
   "environment": "Desktop Edge, real ONNX inference, synthetic camera carrying static public images; NOT physical iPhone camera",
   "photos": [
     {
-      "file": "artifacts/bottles/bottle-10.jpg",
+      "file": "public/samples/demo-bottle.jpg",
       "detections": "塑料\n51%\n玻璃\n36%"
     },
     {
-      "file": "artifacts/bottles/bottle-11.jpg",
+      "file": "public/samples/demo-bottle-small.jpg",
       "detections": "塑料\n54%\n塑料\n38%"
-    },
-    {
-      "file": "artifacts/bottles/bottle-5.jpg",
-      "detections": "none"
-    },
-    {
-      "file": "artifacts/bottles/bottle-7.jpg",
-      "detections": "塑料\n49%\n塑料\n34%"
-    },
-    {
-      "file": "artifacts/bottles/bottle-2.jpg",
-      "detections": "塑料\n59%"
     }
   ],
   "checks": {
     "liveBottlePlastic": true,
     "switchToCardboardWithoutRestart": true
   },
-  "selectedDemoBottle": "artifacts/bottles/bottle-10.jpg",
+  "selectedDemoBottle": "public/samples/demo-bottle.jpg",
   "passed": true
 }

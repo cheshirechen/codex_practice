@@ -4,21 +4,22 @@
 
 Pages 适配已经完成，源码、两个 ONNX 模型、运行库、示例、自动发布流程均已准备。本地已经验证 `/codex_practice/` 路径下的图片识别、相机、离线重新加载等功能。
 
-仓库：`cheshirechen/codex_practice`，分支：`main`。首次发布状态以仓库 Actions 和 Settings → Pages 的结果为准。
+仓库：`cheshirechen/codex_practice`（公开），分支：`main`。2026-09-06 已启用 GitHub Actions 发布；首次发布成功记录：https://github.com/cheshirechen/codex_practice/actions/runs/33971783711 。
+
+正式公开网址：https://cheshirechen.github.io/codex_practice/ ，无需登录，二维码见 `phone-qr.png`。
 
 已可使用的 Sites 备用入口：https://ican-garbage-camera.lsc0319.chatgpt.site
 
 ## 发布设置
 
-1. 检查仓库的现有文件、默认分支和 Pages 配置，再合入本项目。当前流程文件默认 `main`；若默认分支不同应对应调整。
-2. 本目录是一个独立项目。如果目标仓库为空，可以放到仓库根目录；如果已有其他网站或代码，应先安排子目录和构建路径，不能直接覆盖。
-3. 到仓库 Settings → Pages，将 Source 设置为 GitHub Actions。
-4. 提交代码触发 `.github/workflows/pages.yml`，或在 Actions 中手动运行。
-5. 等待发布成功，读取 GitHub 返回的实际网址，再生成正式二维码并用 iPhone 验证。
+1. 项目已放在仓库根目录，Source 已设置为 GitHub Actions。
+2. 后续提交到 `main` 会触发 `.github/workflows/pages.yml`，也可在 Actions 中手动运行。
+3. 等待 build 和 deploy 均成功，再刷新公开网址；手机的旧缓存可能需要联网重新加载。
+4. 首次失败原因为 Pages 未启用（部署接口 404）；测试和构建本身通过。启用 Pages 后重新运行已成功。
 
 默认网址为 `https://cheshirechen.github.io/codex_practice/`。采用 HTTPS，不使用自定义域名。
 
-GitHub Free 的 Pages 需要公开仓库；私有仓库是否支持取决于账号计划。无需为此先改变仓库可见性。参考：[GitHub 官方 Pages 创建说明](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
+本次按用户确认使用公开仓库，未购买付费计划或配置自定义域名。
 
 ## 本地启动与打包
 

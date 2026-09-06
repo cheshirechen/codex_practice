@@ -2,7 +2,11 @@
 
 这是 GitHub Pages 版本，仓库为 `cheshirechen/codex_practice`。发布配置见 `GitHub Pages发布说明.md`。
 
-手机入口（首次部署成功后可用）：https://cheshirechen.github.io/codex_practice/
+公开手机入口：https://cheshirechen.github.io/codex_practice/
+
+2026-09-06 已通过 GitHub Actions 发布，仓库公开。扫码打开同一网页：
+
+![手机识别网页二维码](phone-qr.png)
 
 无需登录；使用 iPhone Safari，允许相机访问后即可连续识别。
 
@@ -12,7 +16,7 @@
 
 Sites 备用地址：https://ican-garbage-camera.lsc0319.chatgpt.site
 
-该入口使用 Sites 私人访问控制，可能要求登录站点所有者对应的 ChatGPT 账号。访问结果以部署记录为准。二维码在 `phone-qr.png`。
+Sites 备用入口可能要求登录站点所有者对应的 ChatGPT 账号。上方 GitHub Pages 公开入口无需登录，`phone-qr.png` 指向 GitHub Pages。
 
 1. iPhone 15 用 Safari 打开，首次联网等待模型准备完成。
 2. 点击「选择照片」，或「开启相机」并允许访问相机。
@@ -31,6 +35,7 @@ Sites 备用地址：https://ican-garbage-camera.lsc0319.chatgpt.site
 - 36 组原模型/ONNX 对照（每尺寸 18 张），包含 10 张公开标注测试图、作者示例拼图、纯色负样例、6 张项目中的道路照片；全部通过检测框和分数对照。
 - 浏览器解析与 Python NMS 对照、横竖图坐标映射、RGB 归一化、类别内重复框过滤均有自动测试。
 - 浏览器功能和连续运行测试见 `validation/browser-validation.json`；这是 Windows Edge/Chromium 测试，不是 iPhone 测试。
+- 2026-09-06 正式 GitHub Pages 已通过独立未登录浏览器验证：416/640 图片识别、模拟相机塑料切纸板、停止与保存、离线重开及无图像上传检查通过。
 - 桌面模拟视频流连续运行 600 秒通过；塑料瓶画面切换为纸板画面后自动更新类别通过，见 `validation/bottle-switch.json`。这是软件链路验证，不代替实体物品和真实相机测试。
 - **iPhone 15 的 Safari 兼容性、真实帧率、10 分钟稳定性、发热、真实垃圾与无垃圾画面的误检，尚需用户实测。** 不预先承诺每秒 5 次更新。
 

@@ -1,7 +1,7 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 (async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});const context=await browser.newContext({viewport:{width:390,height:844}});const page=await context.newPage();
-const report={environment:'Desktop Edge, real ONNX inference, synthetic camera carrying static public images; NOT physical iPhone camera',photos:[],checks:{}};
+const report={targetUrl:process.env.TEST_URL||'http://localhost:4174/codex_practice/',startedAt:new Date().toISOString(),environment:'Desktop Edge, real ONNX inference, synthetic camera carrying static public images; NOT physical iPhone camera',photos:[],checks:{}};
 try{
 await page.goto(process.env.TEST_URL||'http://localhost:4174/codex_practice/');await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(b=>b.textContent==='开启相机'&&!b.disabled),{},{timeout:180000});
 let bottle;

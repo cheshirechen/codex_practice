@@ -1,6 +1,7 @@
 {
+  "targetUrl": "https://cheshirechen.github.io/codex_practice/",
   "environment": "Desktop Edge/Chromium, mobile viewport, canvas-generated camera stream (getUserMedia stub); NOT iPhone Safari",
-  "startedAt": "2026-09-05T13:19:50.887Z",
+  "startedAt": "2026-09-06T03:32:54.091Z",
   "checks": {
     "modelLoaded": true,
     "photo416": true,
@@ -16,13 +17,13 @@
     "noImageUploads": true,
     "noExternalInferenceRequests": true
   },
-  "photo416": "01\n检出目标\n471 ms\n单次识别耗时\n2.1 次/秒\n处理速率估计",
-  "photo640": "13\n检出目标\n739 ms\n单次识别耗时\n1.4 次/秒\n处理速率估计",
-  "cameraSoakSeconds": 31.013,
-  "cameraMetrics": "00\n检出目标\n85 ms\n单次识别耗时\n11.8 次/秒\n处理速率估计",
+  "photo416": "01\n检出目标\n420 ms\n单次识别耗时\n2.4 次/秒\n处理速率估计",
+  "photo640": "13\n检出目标\n787 ms\n单次识别耗时\n1.3 次/秒\n处理速率估计",
+  "cameraSoakSeconds": 31.062,
+  "cameraMetrics": "00\n检出目标\n395 ms\n单次识别耗时\n2.5 次/秒\n处理速率估计",
   "backendStatus": "照片识别完成",
   "errors": [],
   "requestFailures": [],
   "passed": true,
-  "finishedAt": "2026-09-05T13:20:34.174Z"
+  "finishedAt": "2026-09-06T03:33:57.570Z"
 }
